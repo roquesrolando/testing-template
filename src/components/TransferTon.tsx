@@ -8,6 +8,7 @@ export function TransferTon() {
   const { sender, connected } = useTonConnect();
 
   const [tonAmount, setTonAmount] = useState("0.01");
+  const [text, setText] = useState("");
   const [tonRecipient, setTonRecipient] = useState(
     "EQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM9c"
   );
@@ -31,6 +32,14 @@ export function TransferTon() {
             style={{ marginRight: 8 }}
             value={tonRecipient}
             onChange={(e) => setTonRecipient(e.target.value)}
+          ></Input>
+        </FlexBoxRow>
+        <FlexBoxRow>
+          <label>Comment </label>
+          <Input
+            style={{ marginRight: 8 }}
+            value={text}
+            onChange={(e) => setText(e.target.value)}
           ></Input>
         </FlexBoxRow>
         <Button
