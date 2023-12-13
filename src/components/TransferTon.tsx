@@ -35,7 +35,7 @@ export function TransferTon() {
           ></Input>
         </FlexBoxRow>
         <FlexBoxRow>
-          <label>Comment </label>
+          <label>Comments </label>
           <Input
             style={{ marginRight: 8 }}
             value={text}
